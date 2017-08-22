@@ -1,14 +1,113 @@
-body  {
-	background: red;
+
+body {
+	background: #fafafa;
+	color:#125688;
+	font-family: Montserrat;
+	/*font-size:responsive 15px 40px;*/
+}
+
+.main {
+	margin:30px auto;
+}
+
+.platzigram {
+	font-size: calc(30.23256px + 2.32558vw);
+	font-family: Oleo Script;
+}
+
+@media screen and (min-width: 1280px) {
+
+	.platzigram {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	.platzigram {
+		font-size: 40px;
+	}
+}
+
+.col.m5 {
+
+	/*border:1px solid blue;*/
+	height: 500px;
+	/*display: flex;*/
+	position: relative;
+}
+
+
+.col.m5 .img-res {
+	position: absolute;
+	top:20%;
+	/*border:1px solid red;*/
+	-webkit-transform-origin: center;
+	        transform-origin: center;
+	/*background: url('../images/iphone.png') no-repeat;
+	/*height: 589px;*/
+	/*background-position:center 2px;*/
+}	
+
+.img-res img {
+	width: 100%;
+}
+
+.site-footer {
+	text-transform: uppercase;
+	font-size:12px;
+	text-align: center;
 
 }
 
-.hellow-title {
-		color:white;
-	}
+.login-box,
+.singup-box {
+	background-color: white;
+	border:1px solid #edeeee; 
+	border-radius:3px;
+	padding: 10px 0;
+	text-align: center;
+}
 
-.hellow-cuadrado {
-		position: absolute;
-		right: 0;
-		border:1px solid blue;
+
+.singup-form {
+	width: 65%;
+	margin:0 auto;
+}
+
+.singup-form .sub-title {
+	font-size: calc(17.67442px + 1.74419vw);
+	color: #a5a7aa;
+
+}
+
+@media screen and (min-width: 1280px) {
+
+	.singup-form .sub-title {
+		font-size: 40px;
 	}
+}
+
+@media screen and (max-width: 420px) {
+
+	.singup-form .sub-title {
+		font-size: 25px;
+	}
+}
+
+.singup-form .btn.btn-fb {
+	background-color: #4090db;
+	font-size:.8em; 
+	
+}
+
+.singup-form .btn.btn-fb:hover {
+	background-color: #2d6599; 
+
+}
+
+.singup-form .btn.btn-singup {
+	background-color: #125688;
+
+}
+
