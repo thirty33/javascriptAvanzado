@@ -1,6 +1,7 @@
 
 body {
 	background: #fafafa;
+	/*background: white;*/
 	color:#125688;
 	font-family: Montserrat;
 	/*font-size:responsive 15px 40px;*/
@@ -15,7 +16,7 @@ body {
 	font-family: Oleo Script;
 }
 
-.col.m5 {
+.col.m5 { 
 
 	/*border:1px solid blue;*/
 	height: 500px;
