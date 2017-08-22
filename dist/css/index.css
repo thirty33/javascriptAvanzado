@@ -1,0 +1,14 @@
+body  {
+	background: red;
+
+}
+
+.hellow-title {
+		color:white;
+	}
+
+.hellow-cuadrado {
+		position: absolute;
+		right: 0;
+		border:1px solid blue;
+	}
