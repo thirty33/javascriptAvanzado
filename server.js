@@ -3,6 +3,8 @@ var app = express()
 
 app.set('view engine', 'pug')
 
+app.use(express.static('dist')) 
+
 app.get('/', function(req,res){
 	res.render('index')
 })
