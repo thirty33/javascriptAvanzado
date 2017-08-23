@@ -14,6 +14,9 @@ var browserSync = require('browser-sync').create()
 var gls = require('gulp-live-server')
 var rename = require('gulp-rename')
 
+var babel = require('babelify')
+var browserify = require('browserify')
+var source = require('vinyl-source-stream')
 // var server = gls.static(['dist', 'src'])
 
 
@@ -34,8 +37,19 @@ gulp.task('styles', function(){
 gulp.task('assets', function(){
 	gulp
 		.src('assets/*')
-		.pipe(gulp.dest('./dist'))
+		.pipe(gulp.dest('./dist/images'))
 })
+
+gulp.task('scripts', function(){
+	browserify('./src/index.js')
+		.transform(babel, {presets:["es2015"]})
+		.bundle()
+		.pipe(source('index.js'))
+		.pipe(rename('app.js'))
+		.pipe(gulp.dest('./dist/js'))
+})
+
+
 
 // gulp.task('serv', function () {
 // 	browserSync.init({
@@ -87,4 +101,4 @@ gulp.task('assets', function(){
 
 
 // gulp.task('default', ['watch', 'serv', 'css'])
-gulp.task('default', ['styles', 'assets'])
+gulp.task('default', ['styles', 'assets','scripts'])
