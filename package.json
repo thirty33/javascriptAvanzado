@@ -5,6 +5,7 @@
   , "main": "index.js"
   , "scripts": { 
     "build": "gulp"
+    ,"start": "gulp watch & node server.js"
 
   }
   , "author": "joel suarez <joelsuarez.1101@gmail.com>"
