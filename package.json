@@ -1,15 +1,17 @@
 {
-  "name": "javascript-pro",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "joel suarez <joelsuarez.1101@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "page": "^1.7.1",
-    "pug": "^2.0.0-rc.3"
+  "name": "javascript-pro"
+  , "version": "1.0.0"
+  , "description": ""
+  , "main": "index.js"
+  , "scripts": { 
+    "build": "gulp"
+
   }
+  , "author": "joel suarez <joelsuarez.1101@gmail.com>"
+  , "license": "ISC"
+  , "dependencies": {
+    "page": "^1.7.1"
+    ,"pug": "^2.0.0-rc.3"
+  }
+
 }
