@@ -24,6 +24,8 @@ gulp.task('styles', function(){
 
 })
 
+
+
 function compile(watch) {
   var bundle = watchify(browserify('./src/index.js'));
 
