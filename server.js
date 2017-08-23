@@ -1,12 +1,16 @@
+var gulp = require('gulp')
+var gls = require('gulp-live-server')
 var express = require('express')
 var app = express()
+
 
 app.set('view engine', 'pug')
 
 app.use(express.static('dist')) 
 
-app.get('/', function(req,res){
+app.get(['/','/signup','/signin'], function(req,res){
 	res.render('index')
+	 
 })
 
 app.listen(8000,function(err){

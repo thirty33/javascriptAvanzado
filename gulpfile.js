@@ -47,6 +47,7 @@ gulp.task('scripts', function(){
 		.pipe(source('index.js'))
 		.pipe(rename('app.js'))
 		.pipe(gulp.dest('./dist/js'))
+		
 })
 
 
@@ -85,16 +86,18 @@ gulp.task('scripts', function(){
 // Tarea para vigilar los cambios 
 
 // gulp.task('watch', function(){
-// 	// gulp.watch('./src/*.css', ['css'])
-// 	gulp.watch('./src/scss/*.scss', ['styles'])
+	// gulp.watch('./src/*.css', ['css'])
+	// gulp.watch('./src/scss/*.scss', ['styles'])
 
-// 	gulp.watch('./src/js/*.js').on('change', function(){
-// 		browserSync.reload()
-// 	})
-// 	gulp.watch('./dist/*.html').on('change', function(file){
-// 		browserSync.reload()
-// 		// server.notify.apply(server,[file])
-// 	})
+	// gulp.watch('./src/js/*.js').on('change', function(){
+	// 	browserSync.reload()
+	// })
+	// gulp.watch('./dist/*.html').on('change', function(file){
+	// 	browserSync.reload()
+	// 	// server.notify.apply(server,[file])
+	// })
+
+	// gulp.watch('./src/*.js', ['scripts'])
 
 	
 // })
